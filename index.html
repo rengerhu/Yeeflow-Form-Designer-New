@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeeflow Form Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="brand">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Create manually</span>
+        </div>
+        <div class="divider"></div>
+        <button class="secondary">Build an app</button>
+        <button class="secondary">Name the application</button>
+      </div>
+      <div class="topbar-center">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="secondary">Help</button>
+        <button class="secondary">Pricing</button>
+        <div class="avatar">T</div>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span class="hint">Use pre-built UI components to speed up a creation of form</span>
+        </div>
+        <section class="control-group">
+          <div class="section-title">Basic Fields</div>
+          <div class="control-grid tiles">
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-square"></i></div>
+              <div class="label">Single line text</div>
+              <div class="meta">2 max. number of lines</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-square-plus"></i></div>
+              <div class="label">Multiple line text</div>
+              <div class="meta">10 max. number of lines</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-solid fa-hashtag"></i></div>
+              <div class="label">Numbers</div>
+              <div class="meta">Input format: Rmb</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-square-check"></i></div>
+              <div class="label">Choices</div>
+              <div class="meta">3 options available</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-circle-dot"></i></div>
+              <div class="label">Radio</div>
+              <div class="meta">3 options available</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-circle"></i></div>
+              <div class="label">Yes/No</div>
+              <div class="meta">Switch control</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-calendar"></i></div>
+              <div class="label">Date/Time</div>
+              <div class="meta">Pick a date</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-user"></i></div>
+              <div class="label">People</div>
+              <div class="meta">Select people</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-hand-pointer"></i></div>
+              <div class="label">Related record</div>
+              <div class="meta">Select records from a list</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-image"></i></div>
+              <div class="label">Attachment</div>
+              <div class="meta">Upload files</div>
+            </div>
+            <div class="control-tile">
+              <div class="icon-circle"><i class="fa-regular fa-bell"></i></div>
+              <div class="label">Reminder</div>
+              <div class="meta">Select reminder time</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="control-group">
+          <div class="section-title">Advanced</div>
+          <div class="control-grid">
+            <div class="pill"><i class="fa-solid fa-table"></i> Data source</div>
+            <div class="pill"><i class="fa-solid fa-list"></i> Lookup</div>
+            <div class="pill"><i class="fa-solid fa-sitemap"></i> Org chart</div>
+            <div class="pill"><i class="fa-regular fa-comment"></i> Sub form</div>
+            <div class="pill"><i class="fa-solid fa-align-left"></i> Rich text</div>
+            <div class="pill"><i class="fa-solid fa-tablet-screen-button"></i> Geolocation</div>
+            <div class="pill"><i class="fa-solid fa-money-bill"></i> Currency</div>
+            <div class="pill"><i class="fa-regular fa-file-lines"></i> Label</div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="canvas">
+        <div class="canvas-toolbar">
+          <div class="toolbar-left">
+            <div class="tab active">Default theme</div>
+            <div class="toggle">
+              <span>Adaptive form for mobile</span>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="toolbar-right">
+            <div class="breadcrumb">Purchase Order Request</div>
+            <div class="actions">
+              <button class="ghost"><i class="fa-solid fa-eye"></i></button>
+              <button class="ghost"><i class="fa-regular fa-floppy-disk"></i></button>
+              <div class="dropdown">
+                <button class="primary">Save</button>
+                <button class="ghost caret"><i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-menu">
+                  <div class="menu-header">Purchase Requisition Approval</div>
+                  <div class="menu-info">Used to submit and route procurement requests.</div>
+                  <div class="menu-section">Submission form</div>
+                  <div class="menu-item">Purchase Order Request</div>
+                  <div class="menu-section">Tasks</div>
+                  <div class="menu-item">Purchase Order Request</div>
+                  <div class="menu-section">Print pages</div>
+                  <div class="menu-item">Purchase Order Request</div>
+                  <div class="menu-actions">
+                    <a href="#">Duplicate</a>
+                    <a href="#">Remove</a>
+                  </div>
+                  <div class="menu-add">Add form</div>
+                  <div class="menu-add">Add task</div>
+                  <div class="menu-add">Add print pages</div>
+                </div>
+              </div>
+              <button class="ghost">Cancel</button>
+              <button class="primary">Save</button>
+              <button class="primary">Publish</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="card-header">
+            <div>
+              <div class="label">Purchase Order Request</div>
+              <div class="meta">Used to submit and route procurement requests</div>
+            </div>
+            <div class="card-actions">
+              <button class="secondary">Save</button>
+              <button class="secondary">Cancel</button>
+              <button class="secondary">Preview</button>
+              <button class="primary">Publish</button>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-title">Applicant Information</div>
+            <div class="columns">
+              <div class="field">
+                <label>Applicant</label>
+                <div class="chip">Yu</div>
+              </div>
+              <div class="field">
+                <label>Department</label>
+                <input type="text" value="Admin">
+              </div>
+              <div class="field">
+                <label>Job Title</label>
+                <input type="text" value="Admin">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-title">PO Basic Details</div>
+            <div class="columns">
+              <div class="field">
+                <label>Purpose of this PO</label>
+                <textarea rows="3" placeholder="Provide details on why this PO is needed and if it's linked to other activities."></textarea>
+              </div>
+              <div class="field">
+                <label>Date of issuing the purchase order</label>
+                <input type="text" placeholder="Date of issuing the purchase order">
+              </div>
+              <div class="field">
+                <label>Vendor Name</label>
+                <input type="text" placeholder="Vendor Name">
+              </div>
+              <div class="field">
+                <label>Vendor ID</label>
+                <input type="text" placeholder="Vendor ID">
+              </div>
+              <div class="field">
+                <label>Product Description</label>
+                <input type="text" placeholder="Product Description">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-title">Contract Information</div>
+            <p class="hint">Provide details on if the PO is governed by contract.</p>
+            <div class="columns">
+              <div class="field">
+                <label>Contract ID</label>
+                <input type="text" placeholder="Applicable for purchasing contracts">
+              </div>
+              <div class="field">
+                <label>Contract Start Date</label>
+                <input type="text" placeholder="Contract Start Date">
+              </div>
+              <div class="field">
+                <label>Contract End Date</label>
+                <input type="text" placeholder="Contract End Date">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-title">PO line items</div>
+            <p class="hint">Provide details on line items being ordered. Each line includes related details like cost and quantity.</p>
+            <div class="columns two">
+              <div class="field">
+                <label>Product Name</label>
+                <input type="text" placeholder="Product Name">
+              </div>
+              <div class="field">
+                <label>PO Line Number</label>
+                <input type="text" value="1">
+              </div>
+              <div class="field">
+                <label>Line Description</label>
+                <input type="text" placeholder="Line Description">
+              </div>
+              <div class="field">
+                <label>Order Quantity</label>
+                <input type="text" placeholder="Order Quantity">
+              </div>
+              <div class="field">
+                <label>Currency</label>
+                <input type="text" placeholder="Select Currency">
+              </div>
+              <div class="field">
+                <label>Per Unit Price</label>
+                <input type="text" placeholder="Per Unit Price">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <div class="inspector-top">
+          <div class="toggle">
+            <span>Inspector</span>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+            <button class="ghost">Field style</button>
+            <button class="ghost">Page style</button>
+            <button class="ghost">Advanced style</button>
+            <button class="primary">Save</button>
+          </div>
+          <div class="preview">
+            <div class="preview-header"></div>
+            <div class="preview-body">
+              <div class="preview-row">
+                <div class="placeholder" style="width:80px;"></div>
+                <div class="placeholder" style="width:120px;"></div>
+              </div>
+              <div class="preview-row">
+                <div class="placeholder" style="width:120px;"></div>
+              </div>
+              <div class="preview-row">
+                <div class="placeholder" style="width:200px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="properties">
+          <div class="prop-header">Control Settings</div>
+          <div class="prop-group">
+            <label>Label</label>
+            <input type="text" value="People">
+          </div>
+          <div class="prop-group">
+            <label>Name</label>
+            <input type="text" value="People">
+            <div class="meta">Original name: department</div>
+          </div>
+          <div class="prop-group inline">
+            <label>Sort</label>
+            <input type="text" value="1">
+          </div>
+          <div class="prop-group">
+            <label>Type</label>
+            <div class="tab-row">
+              <button class="ghost">Single user</button>
+              <button class="ghost">Multiple users</button>
+              <button class="primary">Hide</button>
+            </div>
+          </div>
+          <div class="prop-group inline">
+            <label>Group approval method</label>
+            <input type="text" value="Approvals by members">
+          </div>
+          <div class="prop-group inline">
+            <label>Binding data</label>
+            <input type="text" value="Department">
+          </div>
+          <div class="prop-group inline">
+            <label>Message</label>
+            <input type="text" value="Department">
+          </div>
+          <div class="prop-group inline">
+            <label>Description</label>
+            <input type="text" value="Select department">
+          </div>
+          <div class="prop-group inline">
+            <label>Title</label>
+            <input type="text" placeholder="Select role">
+            <div class="subtitle">When use title for system notification instead of selected user's title</div>
+          </div>
+          <div class="prop-group inline">
+            <label>Chatter</label>
+            <input type="text" value="Department">
+            <div class="subtitle">When use title for system notification instead of selected user's title</div>
+          </div>
+          <div class="prop-group inline">
+            <label>Group approval method</label>
+            <input type="text" value="Department">
+            <div class="subtitle">When use title for system notification instead of selected user's title</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
